@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <title>Hey!</title>
-    <meta name="description" content="Mon portfolio">
-    <meta name="author" content="zalken">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-</head>
-<script type="text/JavaScript" src="scripts/script.js"></script>
-<body>
-    <header>
-        <a id="logo" href="../index.html"><img src="images/e3.jpg" alt="à remplir"></a> 
-      
-        <p>
-        <a href=#accueil>Accueil</a> 
-        <a href=#projets>Mes projets</a>
-        <a href="../index.html">Accueil</a>
-        </p>
-
-        <div>
-            <a href="https://www.linkedin.com/in/gabriel-portier-210873332/" target="_blank"><img src="images/linkedin-2935407_1280.png" alt="à remplir"></a>
-            <a href="https://github.com/pixzrr" target="_blank" id="github"><img src="images/github-mark-white.png" alt="à remplir"></a>
-            <a href="mailto:gabriel.portier94@gmail.com"><img src="images/letter-2935365_1280.png" alt="à remplir"></a>
-        </div>
-    </header>
+<?php
+include 'assets/int/top.php';
+?>
 
 
     <main id="accueil">
@@ -54,19 +29,22 @@
                 <p>Depuis octobre 2024, je me suis lancé dans la création de cette page web, qui aura pour but de résumer mes récents savoirs et savoir-faire à travers la présentation de mes expériences, ainsi que différents projets que j'entreprendrai au cours des années à venir.</p>
                 <br>
                 <p id="comp">Languages utilisés :</p>
-                <img src="images/html5-logo-modern.png">
+                <img src="<?php ROOT; ?>assets/images/html5-logo-modern.png">
                 <ul>
                     <li>Compétence 1</li>
                     <li>Compétence 2</li>
                 </ul>
                 <a href="lien">Voir plus</a>
             </article>
-        
+            <form action="<?php ROOT; ?>assets/pages/contact.php" method="post" enctype="multipart/form-data">
+                <label for="email">On échange ?</label>
+                <input type="email" id="email" name="email" placeholder="email" maxlength="100">
+                <div class="br">
+                <input type="submit">
+                </div>
+            </form>    
     </main>
-    <footer>
-        <p>&copy; Copyright 2024</p>
-        <br>
-        <p>Site entièrement réalisé à la main</p>
-    </footer>
-</body>
-</html>
+
+
+<?php
+include 'assets/int/bottom.php';
