@@ -21,7 +21,7 @@ define('ROOT', '/Portfolio/');
         <p>
         <a href=#accueil>Accueil</a> 
         <a href=#projets>Mes projets</a>
-        <a href="../index.html">Accueil</a>
+        <a href="<?php ROOT; ?>index.html">Accueil</a>
         </p>
 
         <div>
