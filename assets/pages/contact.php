@@ -15,4 +15,6 @@ if (!empty($_POST['email'])){
     } else {
         echo "L'adresse e-mail n'est pas valide.";
     }
+} else {
+    echo 'Veuillez renseigner un mail valide.';
 }
