@@ -16,12 +16,12 @@ define('ROOT', '/Portfolio/');
 <script type="text/JavaScript" src="assets/scripts/script.js"></script>
 <body>
     <header>
-        <a id="logo" href="<?php ROOT; ?>index.html"><img src="<?php ROOT; ?>assets/images/e3.jpg" alt="à remplir"></a> 
+        <a id="logo" href="<?php ROOT; ?>index.php"><img src="<?php ROOT; ?>assets/images/e3.jpg" alt="à remplir"></a> 
       
         <p>
         <a href=#accueil>Accueil</a> 
         <a href=#projets>Mes projets</a>
-        <a href="<?php ROOT; ?>index.html">Accueil</a>
+        <a href="<?php ROOT; ?>index.php">Accueil</a>
         </p>
 
         <div>
